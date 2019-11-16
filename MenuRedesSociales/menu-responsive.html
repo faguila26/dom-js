@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/0c0f0ff8c2.js" crossorigin="anonymous"></script>
+
+    <style>
+        .menu-iconos{
+            width: 45px;
+        }
+        .fa-share-alt{
+            cursor: pointer;
+        }
+        .desaparecer{
+            margin-left: -55px;
+            width: 0;
+        }
+        #iconos-sociales{
+            width: 100%;
+            transition: all 0.5 ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="mt-5 menu-iconos text-center text-white">
+        <div id="boton" class="bg-warning"><i class="fa fa-share-alt" aria-hidden="true"></i> </div>
+        <div id="iconos-sociales" class="desaparecer">
+            <div class="bg-primary"><a href="#"></a><i class="fab fa-facebook-f text-white" aria-hidden="true"></i> </div>
+            <div class="bg-success"><a href="#"></a><i class="fab fa-twitter text-white" aria-hidden="true"></i> </div>
+            <div class="bg-danger"><a href="#"></a><i class="fab fa-youtube text-white" aria-hidden="true"></i> </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("boton").onclick = function () {
+            document.getElementById("iconos-sociales").classList.toggle("desaparecer");
+        }
+    </script>
+</body>
+</html>
